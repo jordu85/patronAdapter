@@ -1,12 +1,12 @@
 # **PATRON ADAPTER O ADAPTADOR**
-Se lo conoce tambien como wrapper (envoltorio).
+Se lo conoce también como wrapper (envoltorio).
 
 
-## **Proposito**
+## **Propósito**
 Es un patrón de diseño estructural que permite que cooperen clases que de otra forma no podrían por tener interfaces incompatibles. 
 
 
-## **Motivacion**
+## **Motivación**
 A veces una clase que ha sido diseñada para reutilizarse, no puede hacerlo porque su interfaz no coincide con la interfaz específica del dominio que requiere la aplicación.  
 
 
@@ -15,10 +15,10 @@ A veces una clase que ha sido diseñada para reutilizarse, no puede hacerlo porq
 *El patrón Adapter permite crear una clase intermedia que sirva como traductora entre el código actual y una clase heredada, una clase de un tercero o cualquier otra clase con una interfaz extraña.*
 
 - ***Cuando quiere reutilizarse varias subclases existentes que carezcan de alguna funcionalidad común que no pueda añadirse a la superclase.*** 
-*Se podría extender cada subclase y colocar la funcionalidad que falta, dentro de las nuevas clases hijas. No obstante, de ese modo, se duplicaría el código en todas estas nuevas clases, lo que no seria eficiente. Una solución es agregar la funcionalidad que falta dentro de una clase adaptadora. Después puedes envolver objetos a los que les falten funciones, dentro de la clase adaptadora, obteniendo esas funciones necesarias de un modo dinámico. Para que esto funcione, las clases en cuestión deben tener una interfaz común y el campo de la clase adaptadora debe seguir dicha interfaz.*
+*Se podría extender cada subclase y colocar la funcionalidad que falta, dentro de las nuevas clases hijas. No obstante, de ese modo, se duplicaría el código en todas estas nuevas clases, lo que no sería eficiente. Una solución es agregar la funcionalidad que falta dentro de una clase adaptadora. Después puedes envolver objetos a los que les falten funciones, dentro de la clase adaptadora, obteniendo esas funciones necesarias de un modo dinámico. Para que esto funcione, las clases en cuestión deben tener una interfaz común y el campo de la clase adaptadora debe seguir dicha interfaz.*
 
 
-## **Implementacion**
+## **Implementación**
 **1. Identificar al menos dos clases con interfaces incompatibles:**
 - Una clase servicio que no puedes cambiar (a menudo de un tercero, heredada o con muchas dependencias existentes). 
 - Una o varias clases cliente que se beneficiarían de contar con una clase de servicio.
