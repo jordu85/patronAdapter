@@ -20,9 +20,6 @@ AdapterApp/
 ├── AdaptadorFahrenheit.cs    # 🔄 Adapter Celsius → Fahrenheit
 ├── AdaptadorKelvin.cs        # 🔄 Adapter Celsius → Kelvin
 ├── Program.cs                # 👤 Cliente que demuestra el uso
-├── DiagramaClasesSimple.puml # 📊 Diagrama de clases simplificado
-├── DiagramaFlujoSimple.puml  # 📊 Diagrama de flujo simplificado
-├── DiagramasMermaid.md       # 📊 Diagramas en formato Mermaid
 └── README.md                 # Este archivo
 ```
 
@@ -57,7 +54,7 @@ AdapterApp/
 
 ### 🎯 Principio de Responsabilidad Única
 - **SensorCelsius**: Solo lee temperaturas en Celsius (25°C fijo)
-- **AdaptadorFahrenheit**: Solo convierte Celsius → Fahrenheit  
+- **AdaptadorFahrenheit**: Solo convierte Celsius → Fahrenheit
 - **AdaptadorKelvin**: Solo convierte Celsius → Kelvin
 - **Program**: Solo coordina la demostración
 
@@ -65,9 +62,9 @@ AdapterApp/
 - ✅ **DEMOSTRADO**: Agregamos `AdaptadorKelvin` sin modificar código existente
 - ✅ `SensorCelsius` permanece cerrado a modificación
 - ✅ `AdaptadorFahrenheit` no fue tocado
-- ✅ Podemos agregar más adaptadores (Rankine, Réaumur) sin problemas
+- ✅ Podemos agregar más adaptadores sin problemas
 
-### ♻️ Reutilización de Código Existente  
+### ♻️ Reutilización de Código Existente
 - ✅ `SensorCelsius` usado por **AMBOS adaptadores** sin modificación
 - ✅ Aprovechamos toda su funcionalidad existente
 - ✅ Un sensor, múltiples representaciones simultáneas
@@ -82,18 +79,6 @@ AdapterApp/
 - ✅ **PROBADA**: Agregamos Kelvin sin tocar código existente
 - ✅ Mismo sensor, múltiples formatos simultáneamente
 - ✅ Escalabilidad demostrada en la práctica
-
-## 🚀 Cómo Ejecutar
-
-### Opción 1: Con .NET SDK (Recomendado)
-```bash
-cd AdapterApp
-dotnet run
-```
-
-### Opción 2: Desde Visual Studio
-1. Abrir `AdapterApp.csproj`
-2. Presionar `F5` o clic en "Ejecutar"
 
 ## 📊 Salida Esperada
 
@@ -112,15 +97,6 @@ Temperatura original: 25°C
 ✅ Mismo sensor, múltiples representaciones
 ✅ Código existente sin modificar
 ```
-## 📊 Diagramas
-
-### 🏗️ Diagrama de Clases
-- **PlantUML**: `DiagramaClasesSimple.puml` - Diagrama simplificado y limpio
-- **Mermaid**: `DiagramasMermaid.md` - Compatible con GitHub, GitLab, etc.
-
-### 🔄 Diagrama de Flujo  
-- **PlantUML**: `DiagramaFlujoSimple.puml` - Flujo de ejecución paso a paso
-- **Mermaid**: `DiagramasMermaid.md` - Versión interactiva
 
 ## 🎓 Conceptos Clave Aprendidos
 
@@ -133,7 +109,7 @@ Temperatura original: 25°C
 ## 💡 Casos de Uso Reales
 
 - 🔌 **APIs de terceros**: Adaptar APIs externas a nuestras interfaces
-- 🗃️ **Bases de datos**: Adaptar diferentes proveedores de BD a una interfaz común  
+- 🗃️ **Bases de datos**: Adaptar diferentes proveedores de BD a una interfaz común
 - 📱 **Sistemas legacy**: Integrar sistemas antiguos con nuevas aplicaciones
 - 🌐 **Servicios web**: Adaptar diferentes formatos de respuesta (XML, JSON)
 - 🌡️ **Conversores de unidades**: Temperatura, peso, distancia, moneda
@@ -142,19 +118,18 @@ Temperatura original: 25°C
 ## 🔧 Tecnologías Utilizadas
 
 - **.NET 9.0**
-- **C# 12**  
+- **C# 12**
 - **Programación Orientada a Objetos**
 - **Principios SOLID**
 - **Patrones de Diseño GoF**
 - **PlantUML** - Para diagramas UML
-- **Mermaid** - Para diagramas en Markdown
 
 ## 🎯 Características de esta Implementación
 
 - ✅ **Código simplificado**: Una temperatura fija (25°C) para claridad
-- ✅ **Salida compacta**: Mensajes concisos y profesionales  
+- ✅ **Salida compacta**: Mensajes concisos
 - ✅ **Múltiples adaptadores**: Fahrenheit y Kelvin implementados
-- ✅ **Diagramas actualizados**: PlantUML y Mermaid incluidos
+- ✅ **Diagramas actualizados**: PlantUML
 - ✅ **Demostración completa**: Patrón Adapter en acción
 
 ---
