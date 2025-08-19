@@ -1,0 +1,7 @@
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\bin\Debug\codigoSinAdapter.exe.config
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\bin\Debug\codigoSinAdapter.exe
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\bin\Debug\codigoSinAdapter.pdb
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\obj\Debug\codigoSinAdapter.csproj.AssemblyReference.cache
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\obj\Debug\codigoSinAdapter.csproj.CoreCompileInputs.cache
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\obj\Debug\codigoSinAdapter.exe
+C:\Users\juanl\Desktop\tpAdapter\patronAdapter\patronAdapter\codigoSinAdapter\obj\Debug\codigoSinAdapter.pdb
