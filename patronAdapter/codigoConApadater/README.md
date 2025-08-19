@@ -98,6 +98,27 @@ Temperatura original: 25°C
 ✅ Código existente sin modificar
 ```
 
+## 📌 Comparación con el código sin Adapter
+En este repositorio se incluye también una versión sin aplicar el patrón Adapter, ubicada en la carpeta `codigoSinAdapter`. A partir de ese ejemplo, se pueden observar las siguientes diferencias:
+
+### 🔍 Sin Adapter:
+- El cliente accede directamente al sensor.
+- No hay interfaz común entre cliente y servicio.
+- Si se desea cambiar el formato de temperatura, hay que modificar el cliente.
+- Se rompe el principio abierto/cerrado.
+- Hay acoplamiento fuerte entre clases.
+- La solución no es escalable ni reutilizable.
+
+### ✅ Con Adapter:
+- El cliente se comunica con interfaces específicas (`ISensorFahrenheit`, `ISensorKelvin`).
+- Los adaptadores traducen las llamadas sin modificar el sensor original.
+- Se pueden agregar nuevos formatos sin tocar el cliente.
+- Se respeta el principio abierto/cerrado.
+- Se reutiliza el mismo sensor para múltiples representaciones.
+- La solución es flexible, extensible y desacoplada.
+
+Esta comparación refuerza la utilidad del patrón Adapter para integrar clases con interfaces incompatibles, manteniendo la claridad, la escalabilidad y las buenas prácticas de diseño.
+
 ## 🎓 Conceptos Clave Aprendidos
 
 1. **Incompatibilidad de Interfaces**: Cómo resolver cuando tenemos clases útiles pero con interfaces incompatibles
