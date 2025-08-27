@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mirko\\Desktop\\AdapterApp\\AdapterApp.csproj": {}
+    "C:\\Users\\mirko\\patronAdapter\\patronAdapter\\codigoConApadater\\AdapterApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mirko\\Desktop\\AdapterApp\\AdapterApp.csproj": {
+    "C:\\Users\\mirko\\patronAdapter\\patronAdapter\\codigoConApadater\\AdapterApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mirko\\Desktop\\AdapterApp\\AdapterApp.csproj",
+        "projectUniqueName": "C:\\Users\\mirko\\patronAdapter\\patronAdapter\\codigoConApadater\\AdapterApp.csproj",
         "projectName": "AdapterApp",
-        "projectPath": "C:\\Users\\mirko\\Desktop\\AdapterApp\\AdapterApp.csproj",
+        "projectPath": "C:\\Users\\mirko\\patronAdapter\\patronAdapter\\codigoConApadater\\AdapterApp.csproj",
         "packagesPath": "C:\\Users\\mirko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mirko\\Desktop\\AdapterApp\\obj\\",
+        "outputPath": "C:\\Users\\mirko\\patronAdapter\\patronAdapter\\codigoConApadater\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mirko\\AppData\\Roaming\\NuGet\\NuGet.Config"

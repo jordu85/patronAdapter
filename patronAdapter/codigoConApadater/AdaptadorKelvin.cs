@@ -1,9 +1,10 @@
 using System;
+using codigoConApadater;
 
 namespace AdapterApp
 {
     // Adaptador para convertir Celsius a Kelvin
-    public class AdaptadorKelvin : ISensorKelvin
+    public class AdaptadorKelvin : ISensorKelvin, ISensorTemperatura
     {
         private readonly SensorCelsius sensorCelsius;
 
@@ -18,6 +19,12 @@ namespace AdapterApp
         {
             double temperaturaCelsius = sensorCelsius.ObtenerTemperaturaCelsius();
             return ConvertirCelsiusAKelvin(temperaturaCelsius);
+        }
+
+        // Implementación de la interfaz común
+        public double LeerTemperatura()
+        {
+            return LeerTemperaturaKelvin();
         }
 
         private double ConvertirCelsiusAKelvin(double celsius)

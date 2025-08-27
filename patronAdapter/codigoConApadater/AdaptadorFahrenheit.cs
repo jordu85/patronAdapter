@@ -1,10 +1,11 @@
 using System;
+using codigoConApadater;
 
 namespace AdapterApp
 {
     // Clase Adapter que implementa la interfaz ISensorFahrenheit
     // y usa internamente SensorCelsius para las conversiones
-    public class AdaptadorFahrenheit : ISensorFahrenheit
+    public class AdaptadorFahrenheit : ISensorFahrenheit, ISensorTemperatura
     {
         private readonly SensorCelsius sensorCelsius;
 
@@ -13,13 +14,17 @@ namespace AdapterApp
             this.sensorCelsius = sensor ?? throw new ArgumentNullException(nameof(sensor));
         }
 
-        // Convierte la temperatura de Celsius a Fahrenheit
-        // Fórmula: °F = (°C × 9/5) + 32
-        public double LeerTemperaturaFahrenheit()
-        {
-            double temperaturaCelsius = sensorCelsius.ObtenerTemperaturaCelsius();
-            return ConvertirCelsiusAFahrenheit(temperaturaCelsius);
-        }
+            public double LeerTemperaturaFahrenheit()
+            {
+                double temperaturaCelsius = sensorCelsius.ObtenerTemperaturaCelsius();
+                return ConvertirCelsiusAFahrenheit(temperaturaCelsius);
+            }
+
+            // Implementación de la interfaz común
+            public double LeerTemperatura()
+            {
+                return LeerTemperaturaFahrenheit();
+            }
 
         private double ConvertirCelsiusAFahrenheit(double celsius)
         {
